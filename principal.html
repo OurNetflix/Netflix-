@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshi - Netflix</title>
+    <link rel="shortcut icon" href="img/Logo-site.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body>
+
+<!--TOPO DA PAGINA, CABEÇARIO CONTENDO: LOGO/INICIO/SÉRIES/FILMES/(MINHA LISTA - APENAS NO PC) E TODOS OS LINKS REDIRECIONANDO PARA A PÁGINA PRINCIPAL-->
+
+    <header class="cabecario">
+        <ul class="cabecario__lista">
+            <li><img src="img/Nlogo.png" alt="Netflix logo" class="nlogo"><img src="img/Netflix_logo.png" alt="Netflix logo" class="cabecario__item container__logo sumir__mobile"></li>
+            <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Home</a></li>
+            <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Series</a></li>
+            <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Movies</a></li>
+            <li class="cabecario__item mobile__sumir"><a href="principal.html" class="cabecario__link">MY list</a></li>
+        </ul>
+    </header>
+
+<!--FILME EM EXIBIÇÃO COM UMA BACKGROUND DO FILME(NO CELULAR É OUTRO BACKGROUND) JUNTO COM UM BOTÃO PARA ASSISTIR E UM PARA (MAIS INFORMAÇÕES - NÃO ESTÁ FUNCIONANDO, FUTURAMENTE ESTARÁ)-->
+
+    <section class="container__background">
+        <img src="img/ares_n_1.png" alt="Titulo" class="container__titulo">
+        <p class="container__texto__mobile">Welcome To Our Netflix <br> Dishu<br>The Destiny Of My Life Beta<br>I Am So Blessed To Have You Beta</p>
+        <p class="container__texto mobile__sumir"><br> My First Child My Beta <br>The Story Of Destiny 💖</p>
+        <div class="container__botao">
+            <a href="filme5.html" class="botao__assistir"><img src="img/Play.png" class="play">Play</a> 
+            <button class="botao__assistir info"><img src="img/info.png" class="play"><p class="mais__info">More info</p></button>    
+        </div>
+    </section>
+
+<!--SEÇÃO CONTENDO FILMES DO ASSISTIR NOVAMENTE(OS FILMES SÃO COLOCADOS MANUALMENTE)-->
+
+    <section class="container">
+        <p class="container__texto">You're the reason my heart smiles every day, my sweet Dishu. 💖</p>
+        <ul class="container__lista">
+            
+            <li class="container__video">
+                <a href="filme1.html">
+                    <img src="img/ares_n_2.png" alt="Video" class="cropped">
+                    <div class="desc">Just a glimpse of you can turn my worst day into pure happiness. 🌹</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme2.html">
+                    <img src="img/ares_n_3.png" alt="Video" class="cropped">
+                    <div class="desc">In your love, I've found my safest place and my sweetest home. 💖</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme3.html">
+                    <img src="img/ares_n_4.png" alt="Video" class="cropped">
+                    <div class="desc">You fill my world with color and my heart with endless warmth. Love you, my Dishu. 🌹</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme4.html">
+                    <img src="img/ares_n_5.png" alt="Video" class="cropped">
+                    <div class="desc">I cherish every second with you, knowing I'm the luckiest to have you by my side. 💖</div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+<!--SEÇÃO CONTENDO FILMES DA MINHA LISTA(OS FILMES SÃO COLOCADOS MANUALMENTE)-->
+
+    <section class="container">
+        <p class="container__texto">You're my morning sun and my starry night, the light that brightens all my days. 🌹</p>
+        <ul class="container__lista">
+
+            <li class="container__video">
+                <a href="filme5.html">
+                    <img src="img/ares_n_6.png" alt="Video" class="cropped">
+                    <div class="desc">You’re my sunshine on cloudy days and the peace in my stormy nights. 💖</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme4.html">
+                    <img src="img/ares_n_7.jpeg" alt="Video" class="cropped">
+                    <div class="desc">Your happiness is my mission, and your heart is my home. 🌹</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme2.html">
+                    <img src="img/ares_n_8.jpeg" alt="Video" class="cropped">
+                    <div class="desc">My heart is yours, Dishu, today, tomorrow, and always. 💖</div>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+<!--SEÇÃO CONTENDO TODOS OS FILMES(OS FILMES SÃO COLOCADOS MANUALMENTE)-->
+
+    <section class="container">
+        <p class="container__texto">Today's top choice</p>
+
+        <div id="carrosel">
+        <button type="button" id="btnleft"><img src="img/Carrosel-setae.png" alt="seta" class="botao__seta"></button>
+        <button type="button" id="btnright"><img src="img/Carrosel-setad.png" alt="seta" class="botao__seta"></button>
+
+        <div class="container__lista" id="container">
+
+            <div class="container__video carrossel_item">
+                <a href="filme1.html">
+                    <img src="img/ares_n_1.png" alt="Video" class="cropped">
+                    <div class="desc">You’re my dream come true, and I fall for you more every day, my Dishu. 🌹</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme2.html">
+                    <img src="img/ares_n_8.jpeg" alt="Video" class="cropped">
+                    <div class="desc">No distance or time can lessen the love I feel for you, my everything. 💖</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme3.html">
+                    <img src="img/ares_n_2.png" alt="Video" class="cropped">
+                    <div class="desc">In a world full of chaos, you’re my peace, my calm, my love. 🌹</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme4.html">
+                    <img src="img/ares_n_7.jpeg" alt="Video" class="cropped">
+                    <div class="desc">With every beat, my heart whispers your name, always longing for you. 💖</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme5.html">
+                    <img src="img/ares_n_3.png" alt="Video" class="cropped">
+                    <div class="desc">I don’t just love you, Dishu; I adore you, cherish you, and treasure every moment with you. 🌹</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme4.html">
+                    <img src="img/ares_n_6.png" alt="Video" class="cropped">
+                    <div class="desc">Just a thought of you brings warmth to my heart and a smile to my face. 💖</div>
+                </a>
+            </div>
+        
+            <div id="limitador">limitador</div>
+        </div>
+        </div>
+
+    </section>
+
+<!--RODAPE DA PAGINA-->
+
+    <footer class="rodape">
+        <h2 class="rodape__texto">made with ❤️ by Anshi</h2> 
+    </footer>
+</body>
+</html>
